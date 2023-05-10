@@ -24,7 +24,6 @@
     color:white;
     padding: 2px;
     border: 1px black solid;
-   
 }
 #select{
     background-color: green;
@@ -67,23 +66,23 @@
     padding: var(--bs-card-img-overlay-padding);
     border-radius: var(--bs-card-inner-border-radius);
     text-align: right;
-  }
-  #btncuadrado{
+}
+#btncuadrado{
     --bs-btn-font-size: 0.8rem;
-  }
-  .footer{
+}
+.footer{
     text-align: center;
     background-color: #2f5268;
     padding: 1%;
     height: 80px;
-  }
-  .footer a{
+}
+.footer a{
     color: azure;
-  }
-  .footer a:hover{
+}
+ooter a:hover{
     color: aquamarine;
-  }
-  .roboto{
+}
+.roboto{
     font-family: Roboto;
     font-size: 25;
-  }
+}
