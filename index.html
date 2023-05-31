@@ -240,13 +240,13 @@
         <div class="col-8">
           <form class="row">
             <div class="col-6">
-              <input type="text" class="form-control" placeholder="Nombre">
+              <input id="nombre" type="text" class="form-control" placeholder="Nombre">
             </div>
             <div class="col-6">
-              <input type="text" class="form-control" placeholder="Apellido">
+              <input id="apellido"type="text" class="form-control" placeholder="Apellido">
             </div>
             <div class="col-12 py-4">
-              <input type="email" class="form-control" placeholder="Email"></input>
+              <input id="email" type="email" class="form-control" placeholder="Email"></input>
             </div>
             <div class="col-6 pb-4">
               <label for="cantidad">Cantidad</label>
@@ -254,7 +254,7 @@
             </div>
             <div class="col-6 pb-4">
               <label for="categoria">Categoria</label>
-              <select class="form-select" id="categoria" name="categoria">
+              <select class="form-select" id="categoria" name="categoria" onclick="calcular()">
                 <option value="estudiante" selected>Estudiante</option>
                 <option value="trainee">Trainee</option>
                 <option value="junior">Junior</option>
@@ -267,7 +267,7 @@
               <button type="reset" class="btn btn-success" style="width: 100%; background-color: lawngreen; border-color: lawngreen;">Borrar</button>
             </div>
             <div class="col-6 pb-4">
-              <button type="button" class="btn btn-success" style="width: 100%; background-color: lawngreen; border-color: lawngreen;" onclick="calcular()">Resumen</button>
+              <button type="submit" class="btn btn-success" style="width: 100%; background-color: lawngreen; border-color: lawngreen;" onclick="imprimir_Resumen()">Resumen</button>
             </div>
           </form>
         </div>
