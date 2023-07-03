@@ -163,15 +163,15 @@
         <div class="col">
         </div>
         <div class="col-8">
-          <form class="row" style="height: 300px;" action="insertar_oradores.php">
+          <form class="row" style="height: 300px;" method="post" action="php/insertar_oradores.php">
             <div class="col-6">
-              <input type="text" class="form-control" placeholder="Nombre">
+              <input type="text" name="nombre" class="form-control"  placeholder="Nombre">
             </div>
             <div class="col-6">
-              <input type="text" class="form-control" placeholder="Apellido">
+              <input type="text" name="apellido" class="form-control" placeholder="Apellido">
             </div>
             <div class="col-12">
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <textarea class="form-control" name="texto" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <div class="col-12">
               <button type="submit" class="btn btn-success" style="width: 100%;">Enviar</button>
