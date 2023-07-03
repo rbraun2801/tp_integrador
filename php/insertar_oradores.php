@@ -6,7 +6,7 @@ $nombre=$_POST["nomnbre"];
 $apellido=$_POST["apellido"];
 $texto=$_POST["texto"];
 
-$insercion="insert into oradores (nombre, apellido, texto) values ($nombre, $apellido, $texo)";
+$insercion="insert into oradores(nombre, apellido, texto) values ('$nombre', '$apellido', '$texto')";
 
 if($conexion_db->query($insercion)) {
     echo "<p>Registro insertado con éxito</p>";
