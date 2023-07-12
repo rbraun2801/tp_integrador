@@ -1,18 +1,21 @@
 <?php
-include "connect_db.php";
+require 'connect_db.php';
 
-$conexion_db=conecxion();
 $nombre=$_POST["nomnbre"];
 $apellido=$_POST["apellido"];
 $texto=$_POST["texto"];
 
-$insercion="insert into 'oradores'('nombre', 'apellido', 'texto') values ('$nombre', '$apellido', '$texto')";
+$ssql="INSERT INTO oradores (nombre, apellido, texto) VALUES ('$nombre', '$apellido', '$texto');";
 
-if($conexion_db->query($insercion)) {
+if($mysqli_conexion->query($ssql)) {
     echo "<p>Registro insertado con éxito</p>";
   } else {
-    echo "<p>Hubo un error al ejecutar la sentencia de inserción: {$conexion->error}</p>";
+    echo "<p>Hubo un error al ejecutar la sentencia de inserción: {$conexion->errno}</p>";
   }
-  $conexion_db->close();
 
+  $sql = "SELECT * FROM `oradores`;";
+
+  echo $sql;
+  
+  $mysqli_conexion->close();
 ?>
